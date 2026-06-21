@@ -6,25 +6,25 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "EngineerMode",
-	owner: "realme",
-	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+    name: "EngineerMode",
+    owner: "realme",
+    apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
 }
 
 android_app_import {
-	name: "ImsService",
-	owner: "realme",
-	apk: "proprietary/priv-app/ImsService/ImsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
+    name: "ImsService",
+    owner: "realme",
+    apk: "proprietary/priv-app/ImsService/ImsService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
 }
 
 dex_import {
@@ -37,18 +37,6 @@ dex_import {
         name: "mediatek-framework",
         owner: "realme",
         jars: ["proprietary/framework/mediatek-framework.jar"],
-}
-
-dex_import {
-        name: "mediatek-ims-base",
-        owner: "realme",
-        jars: ["proprietary/framework/mediatek-ims-base.jar"],
-}
-
-dex_import {
-        name: "mediatek-ims-common",
-        owner: "realme",
-        jars: ["proprietary/framework/mediatek-ims-common.jar"],
 }
 
 dex_import {
